@@ -3,14 +3,20 @@
 
 BG = "images/BG.png";
 BOY_PORTRAIT = "portraits/Boy6x.png";
+BOY_SMILE = "portraits/Boy6xSmile.png";
 GIRL_AVATAR = "portraits/Girl.png";
 BEDROOM = "maps/BedroomBig.png";
+BEDROOM_BOY = "maps/BedroomBoy.png";
+CLASSROOM = "maps/ClassroomBig.png";
 	
 images = [
 	BG,
 	BOY_PORTRAIT,
+    BOY_SMILE,
     GIRL_AVATAR,
     BEDROOM,
+    BEDROOM_BOY,
+    CLASSROOM,
 ];
 		
 function preloadGFX(source)
