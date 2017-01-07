@@ -27,12 +27,9 @@ function VisualNovel(frame, chars, prevChars, txt, avt, name, msg, fx, choices, 
 	
 	this.script = {};
 	
-	this.inGameMode = false;
-	this.switchToGame = function() { inGameMode = true; uiMode = GAME; this.gfx(); };
-	
 	this.play = function()
 	{
-		if (!this.inquiring && !this.inGameMode)
+		if (!this.inquiring)
 		{
 			this.clearInquiry();
 			var jumper = this.script[this.page][this.script[this.page].length - 1];	
@@ -41,6 +38,11 @@ function VisualNovel(frame, chars, prevChars, txt, avt, name, msg, fx, choices, 
 			this.gfx();
 		}
 	}
+    
+    this.jump = function(string jumper)
+    {
+        this.script[this.page][this.script[this.page].length - 1] += ("#" + jumper);
+    }
 	
 	this.narrate = function(t)
     {
