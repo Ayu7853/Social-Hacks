@@ -39,7 +39,7 @@ function VisualNovel(frame, chars, prevChars, txt, avt, name, msg, fx, choices, 
 		}
 	}
     
-    this.jump = function(string jumper)
+    this.jump = function(jumper)
     {
         this.script[this.page][this.script[this.page].length - 1] += ("#" + jumper);
     }
