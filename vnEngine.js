@@ -211,7 +211,7 @@ function Character(m, c, n, s, a, p)
 			vn.choiceFrame.appendChild(choice);
 		}
 		
-		vn.textFrame.style.bottom = (answers.length * (46)) + "px";
+		vn.textFrame.style.bottom = (answers.length * (45)) + "px";
 		vn.choiceFrame.style.maxHeight = "576px";
 	}
 }
