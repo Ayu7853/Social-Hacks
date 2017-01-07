@@ -20,7 +20,6 @@ function VisualNovel(frame, chars, prevChars, txt, avt, name, msg, fx, choices, 
 	this.page = -1;			// Initial Story Position
 	this.uiMode = 0;
 	this.inquiring = false;
-	this.events = [];		// Story Altering Events
 		// Images
 	this.bg = "";
 	this.characters = [];
@@ -43,7 +42,13 @@ function VisualNovel(frame, chars, prevChars, txt, avt, name, msg, fx, choices, 
 		}
 	}
 	
-	this.narrate = function(t)			{ this.textMessage.innerHTML = t; }
+	this.narrate = function(t)
+    {
+        this.uiMode = MONOLOGUE;
+        this.textMessage.innerHTML = t;
+        this.textFrame.style.bottom = 0;
+		this.textFrame.style.transition = "";
+    }
 	
 	this.changeUI = function(ui)		{ this.uiMode = ui; this.gfx(); }
 	this.changeBG = function(back)		{ this.bg = "url('" + back + "')"; }
@@ -204,9 +209,7 @@ function Character(m, c, n, s, a, p)
 			vn.choiceFrame.appendChild(choice);
 		}
 		
-		var choicesPosition = (answers.length - 2) * 7 + 16;
-		var textPosition = answers.length * 9;
-		vn.textFrame.style.bottom = textPosition + "%";
+		vn.textFrame.style.bottom = (answers.length * (46)) + "px";
 		vn.choiceFrame.style.maxHeight = "576px";
 	}
 }
