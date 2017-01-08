@@ -5,6 +5,7 @@ BG = "images/BG.png";
 BOY_PORTRAIT = "portraits/Boy6x.png";
 BOY_SMILE = "portraits/Boy6xSmile.png";
 BOY_GRIMACE = "portraits/Boy6xGrimace.png";
+BOY_SOBBING = "portraits/Boy6xSobbing.png";
 GIRL_AVATAR = "portraits/Girl.png";
 BEDROOM = "maps/BedroomBig.png";
 BEDROOM_BOY = "maps/BedroomBoy.png";
@@ -15,6 +16,7 @@ images = [
 	BOY_PORTRAIT,
     BOY_SMILE,
     BOY_GRIMACE,
+    BOY_SOBBING,
     GIRL_AVATAR,
     BEDROOM,
     BEDROOM_BOY,
