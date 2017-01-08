@@ -171,6 +171,8 @@ function Character(m, c, n, s, a, p)
 	
 	this.say = function(vn, t)
 	{
+        vn.uiMode = DIALOGUE;
+
 		vn.textMessage.innerHTML = t;
 		
 		if (this.isMainPlayer) {
