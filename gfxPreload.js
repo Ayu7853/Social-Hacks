@@ -12,6 +12,7 @@ BEDROOM = "maps/BedroomBig.png";
 BEDROOM_BOY = "maps/BedroomBoy.png";
 CLASSROOM = "maps/ClassroomBig.png";
 HUGGING = "portraits/Hugging.png";
+BAD_ENDING = "endings/BadEnding.png";
 	
 images = [
 	BG,
@@ -24,7 +25,8 @@ images = [
     BEDROOM,
     BEDROOM_BOY,
     CLASSROOM,
-    HUGGING
+    HUGGING,
+    BAD_ENDING
 ];
 		
 function preloadGFX(source)
