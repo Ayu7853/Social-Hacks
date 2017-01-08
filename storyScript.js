@@ -150,6 +150,17 @@ gameVN.script = {
         77:[function() { gameVN.narrate("Basked in light, you can only imagine what it might be like to be Jack in his shoes."); }, "#78"],
 // DAY 4
         78:[function() { progressGameDay(); gameVN.narrate("You couldn't really sleep well that night, but life still continues for you."); }, "#79"],
+        79:[function() { gameVN.narrate("You head to school and notice that Jack isn't there."); }, "#80"],
+        80:[function() { gameVN.narrate("He has informed you that he will be at therapy."); }, "#81"],
+        81:[function() { gameVN.narrate("You hope that things go well for him as another day passes by."); }, "#82"],
+// In the future
+        82:[function() { currentGameDay = "?"; hideGameCalendar(); gameVN.changeBG(SKY); gameVN.narrate("You decide to visit Jack after the school year ends."); }, "#83"],
+        83:[function() { protagonist.appear(gameVN, 0, BOY_SMILE); protagonist.say(gameVN, "Thanks for everything you've done for me"); }, "#84"],
+        84:[function() { gameVN.uiMode = CG; gameVN.changeBG(CG_JACK); }, "#End Credits 1"],
+				"End Credits 1":[function() {	gameVN.changeBG(TRUE_ENDING_1); }, "#End Credits 2"],
+				"End Credits 2":[function() { gameVN.changeBG(TRUE_ENDING_2); }, "#End Credits 3"],
+				"End Credits 3":[function() { gameVN.changeBG(TRUE_ENDING_3); }, "#End Credits 4"],
+				"End Credits 4":[function() { gameVN.changeBG(TRUE_ENDING_4); }, "#REFRESH"],
 }
 
 	gameVN.play();

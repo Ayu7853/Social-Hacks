@@ -14,6 +14,12 @@ CLASSROOM = "maps/ClassroomBig.png";
 HUGGING = "portraits/Hugging.png";
 BAD_ENDING = "endings/BadEnding.png";
 AMBIVALENT_ENDING = "endings/AmbivalentEnding.png";
+TRUE_ENDING_1 = "endings/TrueEnd1.png";
+TRUE_ENDING_2 = "endings/TrueEnd2.png";
+TRUE_ENDING_3 = "endings/TrueEnd3.png";
+TRUE_ENDING_4 = "endings/TrueEnd4.png";
+SKY = "maps/Sky.png";
+CG_JACK = "endings/Jack.png";
 	
 images = [
 	BG,
@@ -28,7 +34,12 @@ images = [
     CLASSROOM,
     HUGGING,
     BAD_ENDING,
-    AMBIVALENT_ENDING
+    AMBIVALENT_ENDING,
+    TRUE_ENDING_1,
+    TRUE_ENDING_2,
+    TRUE_ENDING_3,
+    TRUE_ENDING_4,
+    CG_JACK
 ];
 		
 function preloadGFX(source)
