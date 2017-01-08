@@ -20,7 +20,7 @@ images = [
     GIRL_AVATAR,
     BEDROOM,
     BEDROOM_BOY,
-    CLASSROOM,
+    CLASSROOM
 ];
 		
 function preloadGFX(source)
